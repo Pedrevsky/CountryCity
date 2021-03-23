@@ -12,7 +12,7 @@ def if_empty(countries):
 
 
 def country_or_capital():
-    decision = input("What would you like to revise? For capitals press 1, for nations press 2: ")
+    decision = input("What would you like to revise? For capitals press 1, for countries press 2: ")
     new_countries = database.get_all_countries()
     random_country = random.choice(new_countries)
     if decision == "1":
