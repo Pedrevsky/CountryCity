@@ -12,6 +12,7 @@ def if_empty(countries):
 
 
 def country_or_capital():
+
     decision = input("What would you like to revise? For capitals press 1, for countries press 2: ")
     new_countries = database.get_all_countries()
     random_country = random.choice(new_countries)
@@ -23,10 +24,10 @@ def country_or_capital():
         key = 'capital'
     else:
         print("Unknown choice")
-        value = 'capital'
-        key = 'country'
-    while decision == "1" or decision == "2":
-        guess = input(f"{random_country[key]} - ")
+        value = None
+        key = None
+    guess = input(f"{random_country[key]} - ")
+    while decision == "1" or decision == "2" or guess != "EXIT":
         if guess == "EXIT":
             break
         elif guess == random_country[value]:

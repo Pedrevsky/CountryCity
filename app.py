@@ -45,7 +45,7 @@ def menu():
             immediately_add_country()
         elif choice == "d":
             immediately_remove_country()
-        elif choice == "33":
+        elif choice == "3333":
             print(database.get_all_countries())
         else:
             print("Unknown choice, please try again")
