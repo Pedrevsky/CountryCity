@@ -6,15 +6,15 @@ import printing_service
 def immediately_add_country():
     add = "y"
     while add == "y":
-        nation = input("Write a nation you want to add: ")
-        capital = input(f"Write a capital of {nation}: ")
-        database.add_country(nation, capital)
-        add = input("Do you want to add another country? Type 'y' if yes: ").lower()
+        country = input("Write a country you want to add: ")
+        capital = input(f"Write a capital of {country}: ")
+        database.add_country(country, capital)
+        add = input("Do you want to add another country? Type 'y' if yes, type anything else if no: ").lower()
 
 
 def immediately_remove_country():
-    nation = input("Write a nation you want to delete: ")
-    database.remove_country(nation)
+    country = input("Write a country you want to delete: ")
+    database.remove_country(country)
 
 
 USER_CHOICE = """
