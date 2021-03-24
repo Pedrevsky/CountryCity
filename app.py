@@ -32,7 +32,7 @@ Your choice: """
 
 
 def menu():
-    #database.create_countries_file()       #This is used if there is no file: countriesjson
+    #database.create_countries_file()       #This is used if there is no file: countries.json
     choice = input(USER_CHOICE).lower()
     while choice != "q":
         if choice == "p":
