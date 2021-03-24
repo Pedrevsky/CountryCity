@@ -32,7 +32,7 @@ Your choice: """
 
 
 def menu():
-    #database.create_countries_file()
+    #database.create_countries_file()       #This is used if there is no file: countriesjson
     choice = input(USER_CHOICE).lower()
     while choice != "q":
         if choice == "p":
@@ -45,7 +45,7 @@ def menu():
             immediately_add_country()
         elif choice == "d":
             immediately_remove_country()
-        elif choice == "3333":
+        elif choice == "3333": #This undercover option to check all countries we have saved
             print(database.get_all_countries())
         else:
             print("Unknown choice, please try again")

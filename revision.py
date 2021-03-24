@@ -27,7 +27,7 @@ def country_or_capital():
         guess = input(f"{random_country[key]} - ")
         if guess == "EXIT":
             break
-        while decision == "1" or decision == "2" :
+        if decision == "1" or decision == "2" :
             if guess == "EXIT":
                 break
             elif guess == random_country[value]:
